@@ -14,16 +14,16 @@ label = sg.Text("Type in a todo")
 input_box = sg.InputText(tooltip="Enter todo", key="todo")
 
 add_button = sg.Button(tooltip="Click to add todo", key="Add", size=1,
-                       image_source='./icons/add.png', image_subsample=20)
+                       image_source='../icons/add.png', image_subsample=20)
 complete_button = sg.Button(tooltip="Click to mark todo as complete", key="Complete", size=1,
-                            image_source='./icons/complete.png', image_subsample=20)
+                            image_source='../icons/complete.png', image_subsample=20)
 exit_button = sg.Button(tooltip="Click to exit todos app", key="Exit", size=1,
-                        image_source='./icons/exit.png', image_subsample=20)
+                        image_source='../icons/exit.png', image_subsample=20)
 
 list_box = sg.Listbox(values=todoFunctions.get_todos(), enable_events=True,
                       key="todos", size=[45,10])
 edit_button = sg.Button(tooltip="Click to edit todo", key="Edit", size=1,
-                        image_source='./icons/edit.png', image_subsample=20)
+                        image_source='../icons/edit.png', image_subsample=20)
 
 window = sg.Window('TODO app',
                    layout=[
